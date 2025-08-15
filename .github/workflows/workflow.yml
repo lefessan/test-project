@@ -106,7 +106,7 @@ jobs:
              touch _drom/docs/doc/.nojekyll
 
       - name: deploy-doc
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@v4
         if: github.ref == 'refs/heads/master' && matrix.ocaml-compiler == '4.13.0' && matrix.os == 'ubuntu-latest'
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
