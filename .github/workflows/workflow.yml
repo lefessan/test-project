@@ -1,5 +1,9 @@
 name: Main Workflow
 
+# needed for documentation deployment
+permissions:
+  contents: write
+
 # use fields.git-main-branch to change from master
 on:
   pull_request:
@@ -30,7 +34,6 @@ jobs:
 
 
     runs-on: ${{ matrix.os }}
-
     # use fields.github-workflow-env to add something here
 
     steps:
