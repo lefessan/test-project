@@ -1,0 +1,10 @@
+/test-project
+*~
+_build
+.merlin
+/_drom
+/_opam
+/_build
+.drom.config
+
+
